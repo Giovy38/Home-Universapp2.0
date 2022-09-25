@@ -1,12 +1,13 @@
 @import './colors';
 
-.container{
+.about-container{
     background-color: $primary-color;
     @include flexCenter;
     flex-direction: column;
 
     @include tablet{
-        margin-top: 25rem;
+        margin-top: 2rem;
+        height: 600px;
     }
 
     @include mobile{
@@ -25,6 +26,7 @@
             // background-clip: text;
             // -webkit-text-fill-color: transparent;
             // -------------------------------
+
 
             @include mobile{
                 text-align: center;   

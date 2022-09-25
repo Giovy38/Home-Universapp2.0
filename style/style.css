@@ -89,6 +89,7 @@
 @media screen and (max-width: 768px) {
   #primary-section .become-programmer {
     flex-direction: column;
+    margin-bottom: 28rem;
   }
 }
 #primary-section .become-programmer .programmer-info {
@@ -202,7 +203,7 @@
   }
 }
 
-.container {
+.about-container {
   background-color: black;
   display: flex;
   align-items: center;
@@ -210,46 +211,47 @@
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .container {
-    margin-top: 25rem;
+  .about-container {
+    margin-top: 2rem;
+    height: 600px;
   }
 }
 @media screen and (max-width: 280px) {
-  .container {
+  .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 380px;
   }
 }
-.container h1 {
+.about-container h1 {
   font-size: 50px;
 }
 @media screen and (max-width: 280px) {
-  .container h1 {
+  .about-container h1 {
     text-align: center;
     margin-bottom: 15rem;
   }
 }
-.container .back-img {
+.about-container .back-img {
   width: 500px;
   height: 500px;
   position: relative;
   top: 3rem;
 }
 @media screen and (max-width: 768px) {
-  .container .back-img {
+  .about-container .back-img {
     margin-top: 5rem;
   }
 }
 @media screen and (max-width: 280px) {
-  .container .back-img {
+  .about-container .back-img {
     margin-top: 15rem;
     width: 340px;
     height: 340px;
   }
 }
-.container .about {
+.about-container .about {
   background-color: rgba(241, 241, 241, 0.1);
   box-shadow: inset 10px 10px 10px rgba(241, 241, 241, 0.1), inset -10px -10px 10px rgba(241, 241, 241, 0.1);
   position: absolute;
@@ -263,7 +265,7 @@
           backdrop-filter: blur(12px);
 }
 @media screen and (max-width: 768px) {
-  .container .about {
+  .about-container .about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,58 +278,58 @@
   }
 }
 @media screen and (max-width: 280px) {
-  .container .about {
+  .about-container .about {
     width: 380px;
     height: 700px;
     margin-left: 1rem;
   }
 }
-.container .about h3 {
+.about-container .about h3 {
   font-size: 35px;
   margin-bottom: 25px;
 }
 @media screen and (max-width: 768px) {
-  .container .about h3 {
+  .about-container .about h3 {
     font-size: 25px;
     margin-bottom: 0.3rem;
   }
 }
-.container .about p {
+.about-container .about p {
   font-size: 20px;
   margin-bottom: 25px;
 }
 @media screen and (max-width: 768px) {
-  .container .about p {
+  .about-container .about p {
     font-size: 20px;
   }
 }
-.container .about .about-left {
+.about-container .about .about-left {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .container .about .about-left {
+  .about-container .about .about-left {
     padding: 0;
     text-align: center;
   }
 }
-.container .about .about-img {
+.about-container .about .about-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container .about .about-img img {
+.about-container .about .about-img img {
   width: 350px;
   height: 350px;
 }
 @media screen and (max-width: 768px) {
-  .container .about .about-img img {
+  .about-container .about .about-img img {
     display: none;
   }
 }
-.container .about .about-right {
+.about-container .about .about-right {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
@@ -335,10 +337,100 @@
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .container .about .about-right {
+  .about-container .about .about-right {
     padding: 0;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    margin-top: 13rem;
+  }
+}
+.container h1 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 280px) {
+  .container h1 {
+    text-align: left;
+    margin-left: 2rem;
+  }
+}
+.container-circle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container-circle img {
+  margin-right: 10.5rem;
+}
+@media screen and (max-width: 768px) {
+  .container-circle #circle-4 {
+    display: none;
+  }
+  .container-circle #circle-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 280px) {
+  .container-circle #circle-2 {
+    display: none;
+  }
+}
+.container-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 70px;
+}
+@media screen and (max-width: 768px) {
+  .container-reviews #rew-user-4 {
+    display: none;
+  }
+  .container-reviews #rew-user-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 280px) {
+  .container-reviews #rew-user-2 {
+    display: none;
+  }
+}
+.container-reviews-user {
+  position: relative;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2.5rem;
+  background-color: rgba(241, 241, 241, 0.1);
+  width: 300px;
+  height: 478px;
+  border-radius: 50px;
+  padding: 1rem;
+  margin-right: 5rem;
+  box-shadow: inset 5px 5px 10px rgba(241, 241, 241, 0.1), inset -5px -5px 10px rgba(241, 241, 241, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+@media screen and (max-width: 280px) {
+  .container-reviews-user {
+    margin: 0;
+  }
+}
+.container-reviews-user .profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.3rem;
 }
 
 * {

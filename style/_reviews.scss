@@ -2,24 +2,50 @@
 
 .container{
 
+        @include mobile{
+            margin-top: 13rem;
+        }
+
 
         h1{
             margin-top: 4rem;
             margin-bottom: 4rem;
             font-size: 60px;
+            text-align: center;
+
+            @include mobile{
+                text-align: left;
+                margin-left: 2rem;
+            }
         }
 
         &-circle{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 400px;
             position: relative;
-            right: 550px;
 
                 img{
                     margin-right: 10.5rem;
                 }
+
+                @include tablet{
+                    #circle-4{
+                        display: none;
+                    }
+    
+                    #circle-3{
+                        display: none;
+                    }
+                }
+
+                @include mobile{
+                    #circle-2{
+                        display: none;
+                    }
+                }
+
+                
         }
 
         &-reviews{
@@ -28,6 +54,22 @@
             justify-content: space-between;
             position: relative;
             left: 70px;
+
+            @include tablet{
+                #rew-user-4{
+                    display: none;
+                }
+
+                #rew-user-3{
+                    display: none;
+                }
+            }
+
+            @include mobile{
+                #rew-user-2{
+                    display: none;
+                }
+            }
 
                 &-user{
                     position: relative;
@@ -44,6 +86,10 @@
                     margin-right: 5rem;
                     box-shadow: inset 5px 5px 10px $trasparent-div,inset -5px -5px 10px $trasparent-div;
                     backdrop-filter: blur(4px);
+
+                    @include mobile{
+                       margin: 0;
+                    }
 
                         .profile-img{
                             display: flex;
