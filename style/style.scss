@@ -1,0 +1,30 @@
+// GENERAL
+    @import './utilies';
+    @import './colors';
+    // link google font 
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+    @import './media-queries';
+
+// PAGE ELEMENTS
+    @import './header';
+    @import './primary-section';
+    @import './about-us';
+    // @import './reviews';
+    // @import './route';
+    // @import './price';
+    // @import './tech-job';
+    // @import './footer';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $light-text-color; 
+}
+
+body{
+    background-color: $primary-color;
+}
+

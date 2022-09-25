@@ -1,0 +1,33 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin btnstyle {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 15px;
+    @include flexCenter();
+    box-shadow: 0 4px 15px 0 $box-shadow-light;
+    cursor: pointer;
+};
+
+@mixin primary-light-btn {
+    background-image: linear-gradient(to right, $primary-gradient-1, $primary-gradient-2, $primary-gradient-3 , $primary-gradient-4 );
+    color: $light-text-color;
+    border: none;
+}
+
+@mixin secondary-light-btn {
+    background-image: linear-gradient(to right, $secondary-gradient-1, $secondary-gradient-2, $secondary-gradient-3 , $secondary-gradient-4 );
+    color: $light-text-color;
+    border: none;
+}
+
+@mixin dark-btn{
+    background-color: $primary-color;
+    color: $light-text-color;
+    border: 1px solid $primary-gradient-1;
+}

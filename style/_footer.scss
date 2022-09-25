@@ -1,0 +1,97 @@
+@import './colors';
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: $footer-primary;
+        padding: 8rem;
+
+        h2{
+            color: $footer-secondary;
+            margin-bottom: 2rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: $footer-secondary;
+            margin-right: 1rem;
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 18px;
+            color: $footer-secondary;
+            margin-top: .6rem;
+                span{
+                    font-weight: bold;
+                    color: $footer-secondary;
+                }
+
+                .universapp-email{
+                    font-style: oblique;
+                    color: $footer-secondary;
+
+                }
+
+                
+        }
+
+
+        label{
+            color: $footer-secondary;
+        }
+
+        .policy-links{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+
+                a{
+                    margin: 0;
+                }
+
+        }
+
+        .social-icon{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .social-logo-link{
+                width: 20px;
+            }
+            .social-logo{
+                width: 30px;
+                
+            }
+        }
+
+        
+    }
+
+    &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: $footer-secondary;
+        height: 469px;
+        padding: 8rem;
+
+        h3{
+            font-size: 30px;
+            color: $footer-primary;
+            width: 550px;
+        }
+
+        .welogo{
+            width: 550px;
+            display: flex;
+            justify-content: right;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.tech-job-container{
+    background-color: $primary-color;
+    display: grid;
+    grid-template-columns: 10% 70% 20% 10%;
+    align-items: center;
+
+        .left-rombo{
+            position: relative;
+            right: 23rem;
+            z-index: 2;
+        }
+
+        &-info{
+            display: grid;
+            grid-template-columns: 60% 1% 30%;
+            // gap: 1rem;
+            column-gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8rem;
+            box-shadow: inset 5px 5px 10px $lighter-trasparent-div, inset -5px -5px 10px $lighter-trasparent-div;
+            background-color: $trasparent-div;
+            border-radius: 15px;
+            width: 80vw;
+            height: 270px;
+            z-index: 1;
+            backdrop-filter: blur(12px);
+
+                h1{
+                    font-size: 30px;
+                }
+
+                p{
+                    font-size: 15px;
+                }
+
+                span{
+                    font-weight: bold;
+                }
+
+                .left-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 15em;
+
+
+                        .info-1{
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            align-items: flex-start;
+                            gap: 3rem;
+                        }
+
+                        .info-2{
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            gap: 3rem;
+                        }
+                }
+
+                .right-info{
+                    p{
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .little-rombo{
+                    width: 200px;
+                    position: relative;
+                    top: 10rem;
+                    right: 6rem;
+                }
+        }
+
+        .right-rombo{
+            z-index: 0;
+            position: relative;
+            right: 10rem;
+        } 
+}
+
+.more-info{
+    background-color: $primary-color;
+    display: grid;
+    grid-template-columns: 50% 1% 50%;
+    gap: 3rem;
+    height: 530px;
+
+        &-left{
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+
+            .info-icon{
+                color: $third-gradient-1;
+                font-size: 50px;
+            }
+
+            p{
+                display: flex;
+                align-items: center;
+                width: 480px;
+                font-size: 20px;
+            }
+        }
+
+        #divider{
+            height:304px; 
+            width: 2px;
+            background-color: #fff;
+        }
+
+        &-right{
+            h1{
+                font-size: 35px;
+                color: $third-gradient-1;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                margin-bottom: 1rem;
+            }
+
+            .sub-container{
+                display: grid;   
+                grid-template-columns: 50% 50%;
+                width: 450px;
+                gap: 1rem;
+
+                .btn{
+                    @include btnstyle;
+                    box-shadow: none;
+                    width: 185px;
+                    height: 32px;
+                    border: none;
+                }
+
+                &-button{
+                    background-color: $trasparent-div;
+                    box-shadow:inset 5px 5px 10px $lighter-trasparent-div, inset -5px -5px 10px $lighter-trasparent-div;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    @include flexCenter;
+                    height: 80px;
+
+                        &-left{
+                            color: $dark-text-color;
+                            background-color: $third-gradient-1;
+                            background-color: -moz-linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+                            background: linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+
+                                i{
+                                    color: $primary-color;
+                                }
+                        }
+
+                        &-right{
+                            background-color: $primary-gradient-1;
+                            background-color: -moz-linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                            background: linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                        }
+                }
+
+                 
+            }
+
+            .double-circle{
+                @include flexCenter;
+                width: 500px;
+                margin-top: 1.5rem;
+            }
+        }
+}

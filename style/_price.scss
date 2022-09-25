@@ -1,0 +1,226 @@
+@import './colors';
+@import './utilies';
+
+.price-container{
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 930px;
+
+        h1{
+            font-size: 60px;
+        }
+
+        h4{
+            font-size: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            margin-bottom: 9rem;
+        }
+
+        &-banner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            z-index: 1;
+
+            
+
+                .price-banner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 370px;
+                    height: 500px;
+                    border-radius: 20px;
+                    background-color: $trasparent-div;
+                    margin-right: 4rem;
+                    margin-left: 4rem;
+                    backdrop-filter: blur(10px);
+                    box-shadow: inset 8px 8px 10px $lighter-trasparent-div,inset -8px -8px 10px $lighter-trasparent-div;
+                    text-align: center;
+
+                        &-title{
+                            width: 100%;
+                            height: 70px;
+                            position: relative;
+                            bottom: 90px;
+                            border-radius: 20px 20px 0 0;
+                            @include flexCenter;
+
+                                h3{
+                                    font-size: 27px;
+                                }
+                        }
+
+                        #no-risk-title{
+                            background-color: $third-gradient-1;
+                            background-color: -moz-linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+                            background: linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+
+                                h3{
+                                    color: $dark-text-color;
+                                }   
+                        }
+
+                        #rated-title{
+                            background-color: $primary-gradient-1;
+                            background-color: -moz-linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                            background: linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                        }
+
+                        &-info{
+                           position: relative;
+                           bottom: 4rem;
+
+                            .slash-price{
+                                text-decoration: line-through;
+                                margin-bottom: 4rem;
+                            }
+
+                            h2{
+                                font-size: 40px;
+                                margin-bottom: 2rem;
+                            }
+
+                            p{
+                                margin-bottom: 2rem;
+                            }
+
+                            h5{
+                                font-size: 18px;
+                            }
+                        }
+
+                }
+        }
+
+        .button-grouped{
+            display: flex;
+            justify-content: space-between;
+            width: 750px;
+            position: relative;
+            z-index: 3;
+            bottom: 35px;
+
+            .price-button-container{
+                padding: 1.2rem;
+                background-color: $trasparent-div;
+                border-radius: 20px;
+                margin-bottom: 2rem;
+                backdrop-filter: blur(12px);
+                box-shadow: inset 5px 5px 8px $lighter-trasparent-div, inset -5px -5px 8px $lighter-trasparent-div;
+    
+                    .btn{
+                        @include btnstyle;
+                        box-shadow: none;
+                        border: none;
+                        width: 210px;
+                    }
+    
+                    #no-risk-button{
+                        background-color: $third-gradient-1;
+                        background-color: -moz-linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+                        background: linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+
+                        color: $dark-text-color;
+
+                                i{
+                                    margin-left: .5rem;
+                                    color: $dark-text-color;
+                                }
+                    }
+
+                    
+    
+                    #rated-button{
+                        background-color: $primary-gradient-1;
+                        background-color: -moz-linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                        background: linear-gradient(90deg, $primary-gradient-1 0%, $primary-gradient-5 100%);
+                    }
+            }
+        }
+
+        .circle-img{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 830px;
+            position: relative;
+            bottom: 250px;
+            z-index: 0;
+        }    
+}
+
+.free-trial{
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px ;
+
+        .free-trial-container{
+            background-color: $trasparent-div;
+            display: flex;
+            justify-content: space-around;
+            width: 1200px;
+            height: 250px;
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: inset 5px 5px 10px $lighter-trasparent-div, inset -5px -5px 10px $lighter-trasparent-div;
+            z-index: 1;
+
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                        h3{
+                            font-size: 32px;
+                        }
+
+                        h6{
+                            font-size: 15px;
+                            width: 800px;
+                            text-align: center;
+                        }
+                }
+
+                &-button{
+                    width: 250px;
+                    height: 76px;
+                    background-color: $trasparent-div;
+                    border-radius: 15px;
+                    @include flexCenter;
+                    box-shadow: inset 5px 5px 10px $lighter-trasparent-div, inset -5px -5px 10px $lighter-trasparent-div;
+                    position: relative;
+                    bottom: 56px;
+                    z-index: 2;
+                    padding: 1.5rem;
+
+                        button{
+                            @include btnstyle;
+                            box-shadow: none;
+                            border: 1px solid $light-text-color;
+                            background-color: $trasparent-div;
+                            width: 200px;
+                            height: 30px;
+                        }
+                }
+        }
+
+        .trasparent-circle{
+            position: relative;
+            bottom: 250px;
+            z-index: 0;
+         }
+}

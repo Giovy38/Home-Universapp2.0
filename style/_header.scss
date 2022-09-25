@@ -1,0 +1,67 @@
+@import './colors';
+@import './utilies';
+
+.header{
+    background-color: $primary-color ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+    #universapp-logo-img{
+            @include mobile{
+               height: 70px;
+            }
+        
+    }
+
+    @include tablet{
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    @include mobile{
+        justify-content: center;
+        padding: 0.5rem;
+        width: max-content;
+    }
+
+    .navbar-button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 550px;
+
+        @include tablet{
+            justify-content: center;
+            width: 250px;
+        }
+
+        @include mobile{
+            width: 280px;
+        }
+
+            .btn{
+                @include btnstyle;
+                height: 50px;
+                width: 250px;
+                font-size: 25px;
+            }
+
+            .primary-light-btn{
+                @include primary-light-btn;
+
+                @include tablet{
+                    display: none;
+                }
+            }
+    
+            .dark-btn{
+                @include dark-btn;
+
+                @include mobile{
+                    width: 150px;
+                }
+            }
+    }
+}

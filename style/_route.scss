@@ -1,0 +1,152 @@
+@import './colors';
+
+.route-container{
+    background-color: $primary-color;
+    @include flexCenter;
+    justify-content: space-around;
+    font-size: 20px;
+
+        &-info{
+            h1{
+                font-size: 50px;
+                margin-bottom: 3rem;
+            }
+
+            p{
+                margin-bottom: 3rem;
+            }
+
+            ul{
+                li{
+                    span{
+                        color: $primary-gradient-1;
+                    }
+                }
+            }
+
+        }
+        
+    .route-img{
+        position: relative;
+        right: 200px;
+    }   
+}
+
+.route-course-container{
+    padding: 2.1rem;
+    background-color: $primary-color;
+    background-image: url(/images/violet\ design.png);
+    background-repeat: repeat-x;
+    background-position: -10rem;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include flexCenter;
+        .programs-container{
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+            width: 500px;
+            height: 350px;
+            background-color: $darker-transparent-div;
+            border-radius: 50px;
+            margin-right: 2.5rem;
+            padding-left: 2rem;
+            box-shadow: inset 5px 5px 10px $trasparent-div, inset -5px -5px 10px $trasparent-div;
+            backdrop-filter: blur(8px);
+
+                .program-info{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 0.1rem;
+                    align-items:center;
+
+                        .left-part{
+
+                            width: max-content;
+                            height: max-content;
+                            h3{
+                                font-size: 27px;
+                                margin-bottom: 1.5rem;
+                            }
+
+                            p{
+                                font-size: 18px;
+                                margin-bottom: 1.5rem;
+                            }
+
+                            .profile{
+                                display: flex;
+                                align-items: flex-end;
+
+                                    &-img{
+                                        margin-right: 1rem;
+                                        @include flexCenter;
+                                        border: 1px solid $light-text-color;
+                                        border-radius: 50px;
+                                        padding: 0.2rem;
+                                    }
+                            }
+                        }
+
+                        #right-1{
+                            background: linear-gradient(135deg, $rectangle-1 0%, $rectangle-1-to-color 100%);
+                        }
+
+                        #right-2{
+                            background: linear-gradient(135deg, $rectangle-2 0%, $rectangle-2-to-color 100%);
+                        }
+
+                        #right-3{
+                            background: linear-gradient(135deg, $rectangle-3 0%, $rectangle-3-to-color 100%);
+                        }
+
+                        .right-part{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 200px;
+                            height: 300px;
+                            margin-right: 1.5rem;
+                            border-radius: 20px;
+                            backdrop-filter: blur(10px);
+                            box-shadow: inset 10px 10px 10px $trasparent-div, inset -10px -10px 10px $trasparent-div;
+
+                                p{
+                                    margin-top: 1.5rem;
+                                    background-color: $darker-transparent-div;
+                                    border-radius: 15px;
+                                    padding: 0.2rem;
+                                    width: 50px;
+                                    @include flexCenter;
+                                    position: relative;
+                                    bottom: 60px;
+                                }
+
+                                #circle-1{
+                                    background-color: $circle-1;
+                                }
+
+                                #circle-2{
+                                    background-color: $circle-2;
+                                }
+
+                                #circle-3{
+                                    background-color: $circle-3;
+                                }
+
+                                .circle{
+                                    width: 120px;
+                                    height: 120px;
+                                    border-radius: 50%;
+
+                                }
+                        }
+                }
+        }
+
+}

@@ -1,0 +1,123 @@
+@import './colors';
+@import './utilies';
+
+
+#primary-section{
+    .become-programmer{
+        background-color: $primary-color;
+        height: 92vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12rem;
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+
+            .programmer-info{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                    h1{
+                        font-size: 4rem;
+                        @include mobile{
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .color-h1{
+                        background: -webkit-linear-gradient($secondary-gradient-1,$secondary-gradient-2,$secondary-gradient-3,$secondary-gradient-4);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    p{
+                        margin-top: 1.5rem;
+                            .programmer-check{
+                                color: $checkbox-color;
+                            }
+
+                            label{
+                                font-size: 18px;
+                            }
+                    }
+
+                    .candidati-button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                            .big-circle{
+                                position: relative;
+                                top: 12px;
+                                right: -3px;
+                            }
+
+                            .trasparent{
+                                background-color: $translucent-div;
+                                margin-top: 19px;
+                                width: 270px;
+                                height: 70px;
+                                position: absolute;
+                                z-index: 5;
+                                border-radius: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: right;
+                                padding-right: 1.2rem;
+                                margin-left: 20px;
+                                backdrop-filter: blur(12px);
+
+                                .little-circle{
+                                    margin-right: 2rem;
+                                }
+
+                                .btn{
+                                    @include btnstyle;
+                                }
+
+                                .primary-light-btn{
+                                    @include primary-light-btn;
+                                }
+                            }   
+                    }
+
+                    .btn{
+                        @include btnstyle;
+                    }
+
+                    .secondary-light-btn{
+                        @include secondary-light-btn;
+                        width: 200px;
+                        margin-left: 5.5rem;
+                    }
+                    
+            }
+
+            .programmer-img{
+
+                #single-cube-img{
+                    display: none;
+
+                    @include tablet{
+                        display: flex;
+                        padding: 2.5rem;
+                    }
+
+                    @include mobile{
+                        width: 420px;
+                    }
+                }
+
+                #double-cube-img{
+                    @include tablet{
+                        display: none;
+                    }
+                }
+
+            }
+    }
+}

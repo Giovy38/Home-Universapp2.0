@@ -1,0 +1,141 @@
+@import './colors';
+
+.container{
+    background-color: $primary-color;
+    @include flexCenter;
+    flex-direction: column;
+
+    @include tablet{
+        margin-top: 25rem;
+    }
+
+    @include mobile{
+          @include flexCenter;    
+          width: 380px;
+    }
+
+        h1{
+            font-size: 50px;
+            // COLORAZIONE TESTO ------
+            // background: -webkit-linear-gradient($primary-title-decoration,
+            // $secondary-title-decoration,
+            // $third-title-decoration,
+            // $fourth-title-decoration,
+            // $fifth-title-decoration);
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // -------------------------------
+
+            @include mobile{
+                text-align: center;   
+                margin-bottom: 15rem;
+            }
+        }
+
+        .back-img{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 3rem;
+
+            @include tablet{
+                margin-top: 5rem;
+            }
+
+            @include mobile{
+             margin-top: 15rem;
+             width: 340px;
+             height: 340px; 
+            }
+        }
+
+        .about{
+            background-color: $trasparent-div;
+            // box-shadow: 5px 5px 20px $trasparent-div;
+            box-shadow: inset 10px 10px 10px $trasparent-div, inset -10px -10px 10px $trasparent-div;
+            position: absolute;
+            z-index: 2;
+            // width: 1500px;
+            width: 80vw;
+            height: 400px;
+            border-radius: 50px;
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
+            backdrop-filter: blur(12px);
+
+            @include tablet{
+                @include flexCenter;
+                flex-direction: column;
+                grid-template-columns: none;
+                padding: 2rem;
+                height: 500px;
+                backdrop-filter: blur(12px);
+            }
+
+            @include mobile{
+                width: 380px;   
+                height: 700px;
+                margin-left: 1rem;
+            }
+
+
+            h3{
+                font-size: 35px;
+                margin-bottom: 25px;
+
+                @include tablet{
+                    font-size: 25px;
+                    margin-bottom: 0.3rem;
+                }
+
+                @include mobile{
+                    
+                }
+            }
+            p{
+                font-size: 20px;
+                margin-bottom: 25px;
+                @include tablet{
+                    font-size: 20px;
+                }
+            }
+
+                .about-left{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2.5rem;
+                    justify-content: center;
+
+                    @include tablet{
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+
+                .about-img{
+
+                    @include flexCenter;
+                    img{
+                        width: 350px;
+                        height: 350px;
+
+                        @include tablet{
+                            display: none;
+                        }
+                    }
+                }
+
+                .about-right{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2.5rem;
+                    justify-content: center;
+                    text-align: right;
+
+                    @include tablet{
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+        }
+}
