@@ -10,7 +10,7 @@
     @import './primary-section';
     @import './about-us';
     @import './reviews';
-    // @import './route';
+    @import './route';
     // @import './price';
     // @import './tech-job';
     // @import './footer';
@@ -28,8 +28,10 @@ body{
     background-color: $primary-color;
 }
 
+@media screen and (min-width: 769px) {
+    section{
+        overflow: hidden;
+    }
+}
 
-// section{
-//     overflow: hidden;
-// }
 
