@@ -2,12 +2,19 @@
     font-size: 60px;
     position: relative;
     text-align: center;
-    top: 358px;
+    top: 375px;
+    z-index: 2;
 
     @include tablet{
         font-size: 40px;
         left: 50px;
         top: 150px;
+    }
+
+    @include mobile{
+        width: 760px;
+        position: relative;
+        top: 571px;
     }
 }
 
@@ -21,6 +28,14 @@
         overflow: hidden;
         width: 850px;
     }
+
+    @include mobile{
+        width: 760px;
+        position: relative;
+        top: 420px;
+    }
+
+    
 
         .left-rombo{
             position: relative;
@@ -51,6 +66,10 @@
             @include tablet{
                 width: 95vw;
                 height: 720px;
+            }
+
+            @include mobile{
+                width: 667px;
             }
 
                 h1{

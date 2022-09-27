@@ -21,9 +21,9 @@
     }
 
     @include mobile{
-        justify-content: center;
-        padding: 0.5rem;
-        width: max-content;
+        justify-content: space-between;
+        padding: 1.5rem 5rem;
+        width:785px;
     }
 
     .navbar-button{
@@ -37,9 +37,7 @@
             width: 250px;
         }
 
-        @include mobile{
-            width: 280px;
-        }
+       
 
             .btn{
                 @include btnstyle;
@@ -59,9 +57,6 @@
             .dark-btn{
                 @include dark-btn;
 
-                @include mobile{
-                    width: 150px;
-                }
             }
     }
 }

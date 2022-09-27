@@ -8,6 +8,10 @@
         margin-top: 2.5rem;
     }
 
+    @include mobile{
+        width: 760px;
+    }
+
     &-left{
         display: flex;
         flex-direction: column;

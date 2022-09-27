@@ -6,8 +6,9 @@
     justify-content: space-around;
     font-size: 20px;
 
- 
-
+    @include mobile{
+        width: 760px;
+    }
 
         &-info{
 
@@ -69,7 +70,8 @@
     }
 
     @include mobile{
-        width: 390px;
+        width: 760px;
+
     }
 
 

@@ -9,7 +9,8 @@
     height: 930px;
 
     @include mobile{
-        width: 390px;
+        width: 760px;
+
     }
 
         h1{
@@ -35,6 +36,7 @@
 
             @include mobile{
                 flex-direction: column;
+                gap: 10rem;
             }
             
 
@@ -127,6 +129,8 @@
             @include mobile{
                 flex-direction: column;
                 width: 230px;
+                gap: 34rem;
+                bottom: 700px;
             }
 
             .price-button-container{
@@ -188,6 +192,8 @@
 
             @include mobile{
                 flex-direction: column;
+                gap: 23rem;
+                bottom: 1600px;
             }
         }    
 }
@@ -199,6 +205,12 @@
     flex-direction: column;
     height: 200px ;
 
+    @include mobile{
+        width: 760px;
+        position: relative;
+        left: 46px;
+        top: 540px;
+    }
     
 
         .free-trial-container{
@@ -217,9 +229,12 @@
                 width: 630px;
             }
 
-            @include mobile{
-                width: 390px;
-            }
+            // @include mobile{
+            //     width: 760px;
+            //     position: relative;
+            //     left: 206px;
+            //     top: 507px;
+            // }
 
                 img{
                     width: 80px;

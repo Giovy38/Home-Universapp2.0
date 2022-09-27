@@ -16,22 +16,18 @@
             margin-bottom: 28rem;
         }
 
-
-
-      
+        @include mobile{
+            width: 760px;
+        }
 
             .programmer-info{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
 
-        
-
                     h1{
                         font-size: 4rem;
-                        @include mobile{
-                            font-size: 3rem;
-                        }
+                        
                     }
 
                     .color-h1{

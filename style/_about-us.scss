@@ -11,8 +11,7 @@
     }
 
     @include mobile{
-          @include flexCenter;    
-          width: 380px;
+        width: 760px;
     }
 
         h1{

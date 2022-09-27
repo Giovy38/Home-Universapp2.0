@@ -6,7 +6,7 @@
   justify-content: space-around;
   padding-top: 1rem;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .header #universapp-logo-img {
     height: 70px;
   }
@@ -17,13 +17,11 @@
     padding: 0.5rem;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .header {
-    justify-content: center;
-    padding: 0.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    width: 785px;
   }
 }
 .header .navbar-button {
@@ -36,11 +34,6 @@
   .header .navbar-button {
     justify-content: center;
     width: 250px;
-  }
-}
-@media screen and (max-width: 280px) {
-  .header .navbar-button {
-    width: 280px;
   }
 }
 .header .navbar-button .btn {
@@ -72,11 +65,6 @@
   color: #fff;
   border: 1px solid #ff0076;
 }
-@media screen and (max-width: 280px) {
-  .header .navbar-button .dark-btn {
-    width: 150px;
-  }
-}
 
 #primary-section .become-programmer {
   background-color: black;
@@ -92,6 +80,11 @@
     margin-bottom: 28rem;
   }
 }
+@media screen and (max-width: 376px) {
+  #primary-section .become-programmer {
+    width: 760px;
+  }
+}
 #primary-section .become-programmer .programmer-info {
   display: flex;
   flex-direction: column;
@@ -99,11 +92,6 @@
 }
 #primary-section .become-programmer .programmer-info h1 {
   font-size: 4rem;
-}
-@media screen and (max-width: 280px) {
-  #primary-section .become-programmer .programmer-info h1 {
-    font-size: 3rem;
-  }
 }
 #primary-section .become-programmer .programmer-info .color-h1 {
   background: -webkit-linear-gradient(#4003CA, #33FFD9, #33a3ff, #3358ff);
@@ -192,7 +180,7 @@
     padding: 2.5rem;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   #primary-section .become-programmer .programmer-img #single-cube-img {
     width: 420px;
   }
@@ -216,18 +204,15 @@
     height: 600px;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
+    width: 760px;
   }
 }
 .about-container h1 {
   font-size: 50px;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .about-container h1 {
     text-align: center;
     margin-bottom: 15rem;
@@ -244,7 +229,7 @@
     margin-top: 5rem;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .about-container .back-img {
     margin-top: 15rem;
     width: 340px;
@@ -277,7 +262,7 @@
             backdrop-filter: blur(12px);
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .about-container .about {
     width: 380px;
     height: 700px;
@@ -343,9 +328,10 @@
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .container {
     margin-top: 13rem;
+    width: 760px;
   }
 }
 .container h1 {
@@ -354,7 +340,7 @@
   font-size: 60px;
   text-align: center;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .container h1 {
     text-align: left;
     margin-left: 2rem;
@@ -365,6 +351,11 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 376px) {
+  .container-circle {
+    left: 220px;
+  }
 }
 .container-circle img {
   margin-right: 10.5rem;
@@ -377,7 +368,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .container-circle #circle-2 {
     display: none;
   }
@@ -397,7 +388,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .container-reviews #rew-user-2 {
     display: none;
   }
@@ -419,9 +410,9 @@
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .container-reviews-user {
-    margin: 0;
+    left: 220px;
   }
 }
 .container-reviews-user .profile-img {
@@ -441,7 +432,12 @@
   justify-content: space-around;
   font-size: 20px;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
+  .route-container {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 376px) {
   .route-container-info {
     text-align: center;
     padding-left: 3rem;
@@ -489,9 +485,9 @@
     display: none;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .route-course-container {
-    width: 390px;
+    width: 760px;
   }
 }
 .route-course-container .programs-container {
@@ -509,7 +505,7 @@
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .route-course-container .programs-container {
     margin-left: 2rem;
   }
@@ -528,7 +524,7 @@
   height: -moz-max-content;
   height: max-content;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .route-course-container .programs-container .program-info .left-part {
     display: none;
   }
@@ -610,15 +606,15 @@
   flex-direction: column;
   height: 930px;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container {
-    width: 390px;
+    width: 760px;
   }
 }
 .price-container h1 {
   font-size: 60px;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container h1 {
     font-size: 50px;
   }
@@ -636,9 +632,10 @@
   width: 100%;
   z-index: 1;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container-banner {
     flex-direction: column;
+    gap: 10rem;
   }
 }
 .price-container-banner .price-banner {
@@ -657,7 +654,7 @@
   box-shadow: inset 8px 8px 10px rgba(219, 213, 213, 0.39), inset -8px -8px 10px rgba(219, 213, 213, 0.39);
   text-align: center;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container-banner .price-banner {
     margin: 0;
   }
@@ -719,10 +716,12 @@
     width: 610px;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container .button-grouped {
     flex-direction: column;
     width: 230px;
+    gap: 34rem;
+    bottom: 700px;
   }
 }
 .price-container .button-grouped .price-button-container {
@@ -782,9 +781,11 @@
     width: 720px;
   }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
   .price-container .circle-img {
     flex-direction: column;
+    gap: 23rem;
+    bottom: 1600px;
   }
 }
 
@@ -794,6 +795,14 @@
   align-items: center;
   flex-direction: column;
   height: 200px;
+}
+@media screen and (max-width: 376px) {
+  .free-trial {
+    width: 760px;
+    position: relative;
+    left: 46px;
+    top: 540px;
+  }
 }
 .free-trial .free-trial-container {
   background-color: rgba(241, 241, 241, 0.1);
@@ -811,11 +820,6 @@
 @media screen and (max-width: 768px) {
   .free-trial .free-trial-container {
     width: 630px;
-  }
-}
-@media screen and (max-width: 280px) {
-  .free-trial .free-trial-container {
-    width: 390px;
   }
 }
 .free-trial .free-trial-container img {
@@ -885,13 +889,21 @@
   font-size: 60px;
   position: relative;
   text-align: center;
-  top: 358px;
+  top: 375px;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
   #tech-job-title {
     font-size: 40px;
     left: 50px;
     top: 150px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #tech-job-title {
+    width: 760px;
+    position: relative;
+    top: 571px;
   }
 }
 
@@ -905,6 +917,13 @@
   .tech-job-container {
     overflow: hidden;
     width: 850px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .tech-job-container {
+    width: 760px;
+    position: relative;
+    top: 420px;
   }
 }
 .tech-job-container .left-rombo {
@@ -938,6 +957,11 @@
   .tech-job-container-info {
     width: 95vw;
     height: 720px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .tech-job-container-info {
+    width: 667px;
   }
 }
 .tech-job-container-info h1 {
@@ -1114,6 +1138,11 @@
 @media screen and (max-width: 768px) {
   .footer-container {
     margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer-container {
+    width: 760px;
   }
 }
 .footer-container-left {
