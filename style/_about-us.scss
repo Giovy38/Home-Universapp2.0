@@ -6,12 +6,13 @@
     flex-direction: column;
 
     @include tablet{
-        margin-top: 2rem;
+        margin-top: 4rem;
         height: 600px;
     }
 
     @include mobile{
-        width: 760px;
+        width: 862px;
+        height: 980px;
     }
 
         h1{
@@ -74,7 +75,7 @@
             }
 
             @include mobile{
-                width: 380px;   
+                width: 660px;   
                 height: 700px;
                 margin-left: 1rem;
             }
@@ -90,7 +91,7 @@
                 }
 
                 @include mobile{
-                    
+                    font-size: 43px;
                 }
             }
             p{
@@ -98,6 +99,10 @@
                 margin-bottom: 25px;
                 @include tablet{
                     font-size: 20px;
+                }
+
+                @include mobile{
+                    font-size: 25px;
                 }
             }
 

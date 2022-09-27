@@ -211,7 +211,7 @@
 }
 @media screen and (max-width: 376px) {
   #primary-section .become-programmer {
-    width: 760px;
+    width: 900px;
   }
 }
 #primary-section .become-programmer .programmer-info {
@@ -221,6 +221,11 @@
 }
 #primary-section .become-programmer .programmer-info h1 {
   font-size: 4rem;
+}
+@media screen and (max-width: 376px) {
+  #primary-section .become-programmer .programmer-info h1 {
+    font-size: 6rem;
+  }
 }
 #primary-section .become-programmer .programmer-info .color-h1 {
   background: -webkit-linear-gradient(#3F9167, #23523A, #5AD194, #53C289);
@@ -237,10 +242,21 @@
 #primary-section .become-programmer .programmer-info p label {
   font-size: 18px;
 }
+@media screen and (max-width: 376px) {
+  #primary-section .become-programmer .programmer-info p label {
+    font-size: 37px;
+  }
+}
 #primary-section .become-programmer .programmer-info .candidati-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  #primary-section .become-programmer .programmer-info .candidati-button {
+    width: 800px;
+    padding-left: 15rem;
+  }
 }
 #primary-section .become-programmer .programmer-info .candidati-button .big-circle {
   position: relative;
@@ -300,6 +316,11 @@
   width: 200px;
   margin-left: 5.5rem;
 }
+@media screen and (max-width: 376px) {
+  #primary-section .become-programmer .programmer-info .secondary-light-btn {
+    margin-left: 15rem;
+  }
+}
 #primary-section .become-programmer .programmer-img #single-cube-img {
   display: none;
 }
@@ -329,13 +350,14 @@
 }
 @media screen and (max-width: 768px) {
   .about-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
     height: 600px;
   }
 }
 @media screen and (max-width: 376px) {
   .about-container {
-    width: 760px;
+    width: 862px;
+    height: 980px;
   }
 }
 .about-container h1 {
@@ -393,7 +415,7 @@
 }
 @media screen and (max-width: 376px) {
   .about-container .about {
-    width: 380px;
+    width: 660px;
     height: 700px;
     margin-left: 1rem;
   }
@@ -408,6 +430,11 @@
     margin-bottom: 0.3rem;
   }
 }
+@media screen and (max-width: 376px) {
+  .about-container .about h3 {
+    font-size: 43px;
+  }
+}
 .about-container .about p {
   font-size: 20px;
   margin-bottom: 25px;
@@ -415,6 +442,11 @@
 @media screen and (max-width: 768px) {
   .about-container .about p {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .about-container .about p {
+    font-size: 25px;
   }
 }
 .about-container .about .about-left {
@@ -471,8 +503,8 @@
 }
 @media screen and (max-width: 376px) {
   .container h1 {
-    text-align: left;
-    margin-left: 2rem;
+    text-align: center;
+    width: 911px;
   }
 }
 .container-circle {
@@ -542,6 +574,8 @@
 @media screen and (max-width: 376px) {
   .container-reviews-user {
     left: 220px;
+    width: 527px;
+    height: 566px;
   }
 }
 .container-reviews-user .profile-img {
@@ -551,6 +585,28 @@
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 0.3rem;
+}
+@media screen and (max-width: 376px) {
+  .container-reviews-user .profile-img {
+    width: 126px;
+    height: 126px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container-reviews-user .profile-img img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container-reviews-user .profile-name {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container-reviews-user .profile-description {
+    font-size: 22px;
+  }
 }
 
 .route-container {
@@ -563,7 +619,7 @@
 }
 @media screen and (max-width: 376px) {
   .route-container {
-    width: 760px;
+    width: 860px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -616,7 +672,7 @@
 }
 @media screen and (max-width: 376px) {
   .route-course-container {
-    width: 760px;
+    width: 966px;
   }
 }
 .route-course-container .programs-container {
@@ -737,7 +793,7 @@
 }
 @media screen and (max-width: 376px) {
   .price-container {
-    width: 760px;
+    width: 915px;
   }
 }
 .price-container h1 {
@@ -927,7 +983,7 @@
 }
 @media screen and (max-width: 376px) {
   .free-trial {
-    width: 760px;
+    width: 816px;
     position: relative;
     left: 46px;
     top: 540px;
@@ -1050,7 +1106,7 @@
 }
 @media screen and (max-width: 376px) {
   .tech-job-container {
-    width: 760px;
+    width: 900px;
     position: relative;
     top: 420px;
   }
@@ -1090,14 +1146,24 @@
 }
 @media screen and (max-width: 376px) {
   .tech-job-container-info {
-    width: 667px;
+    width: 777px;
   }
 }
 .tech-job-container-info h1 {
   font-size: 30px;
 }
+@media screen and (max-width: 376px) {
+  .tech-job-container-info h1 {
+    font-size: 40px;
+  }
+}
 .tech-job-container-info p {
   font-size: 15px;
+}
+@media screen and (max-width: 376px) {
+  .tech-job-container-info p {
+    font-size: 20px;
+  }
 }
 .tech-job-container-info span {
   font-weight: bold;
@@ -1169,6 +1235,12 @@
     height: 800px;
   }
 }
+@media screen and (max-width: 376px) {
+  .more-info {
+    width: 960px;
+    height: 1956px;
+  }
+}
 .more-info-left {
   display: flex;
   flex-direction: column;
@@ -1184,10 +1256,20 @@
   width: 480px;
   font-size: 20px;
 }
+@media screen and (max-width: 376px) {
+  .more-info-left p {
+    font-size: 39px;
+  }
+}
 .more-info #divider {
   height: 304px;
   width: 2px;
   background-color: #fff;
+}
+@media screen and (max-width: 376px) {
+  .more-info #divider {
+    display: none;
+  }
 }
 .more-info-right h1 {
   font-size: 35px;
@@ -1199,6 +1281,11 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 376px) {
+  .more-info-right h1 {
+    font-size: 55px;
+  }
+}
 .more-info-right p {
   margin-bottom: 1rem;
 }
@@ -1207,11 +1294,21 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 376px) {
+  .more-info-right p {
+    font-size: 30px;
+  }
+}
 .more-info-right .sub-container {
   display: grid;
   grid-template-columns: 50% 50%;
   width: 450px;
   gap: 1rem;
+}
+@media screen and (max-width: 376px) {
+  .more-info-right .sub-container {
+    width: 640px;
+  }
 }
 .more-info-right .sub-container .btn {
   width: 140px;
@@ -1228,6 +1325,13 @@
   height: 32px;
   border: none;
 }
+@media screen and (max-width: 376px) {
+  .more-info-right .sub-container .btn {
+    height: 80px;
+    width: 250px;
+    font-size: 30px;
+  }
+}
 .more-info-right .sub-container-button {
   background-color: rgba(241, 241, 241, 0.1);
   box-shadow: inset 5px 5px 10px rgba(219, 213, 213, 0.39), inset -5px -5px 10px rgba(219, 213, 213, 0.39);
@@ -1237,6 +1341,11 @@
   align-items: center;
   justify-content: center;
   height: 80px;
+}
+@media screen and (max-width: 376px) {
+  .more-info-right .sub-container-button {
+    height: 120px;
+  }
 }
 .more-info-right .sub-container-button-left {
   color: #000;
@@ -1259,6 +1368,19 @@
   width: 500px;
   margin-top: 1.5rem;
 }
+@media screen and (max-width: 376px) {
+  .more-info-right .double-circle img {
+    width: 670px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .more-info-right .double-circle {
+    width: 660px;
+    height: 400px;
+    position: relative;
+    top: 10rem;
+  }
+}
 
 .footer-container {
   display: grid;
@@ -1271,7 +1393,7 @@
 }
 @media screen and (max-width: 376px) {
   .footer-container {
-    width: 760px;
+    width: 876px;
   }
 }
 .footer-container-left {

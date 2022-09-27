@@ -17,8 +17,8 @@
             text-align: center;
 
             @include mobile{
-                text-align: left;
-                margin-left: 2rem;
+                text-align: center;
+                width: 911px;
             }
         }
 
@@ -96,6 +96,8 @@
 
                     @include mobile{
                         left: 220px;
+                        width: 527px;
+                        height: 566px;
                     }
 
                         .profile-img{
@@ -105,6 +107,31 @@
                             border: 1px solid $light-text-color;
                             border-radius: 100px;
                             padding: 0.3rem;
+
+                            @include mobile{
+                                width: 126px;
+                                height: 126px;
+                            }
+
+                            img{
+                                @include mobile{
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+
+                        }
+
+                        .profile-name{
+                            @include mobile{
+                                font-size: 50px;
+                            }
+                        }
+
+                        .profile-description{
+                            @include mobile{
+                                font-size: 22px;
+                            }
                         }
                 }
         }

@@ -30,7 +30,7 @@
     }
 
     @include mobile{
-        width: 760px;
+        width: 900px;
         position: relative;
         top: 420px;
     }
@@ -69,15 +69,23 @@
             }
 
             @include mobile{
-                width: 667px;
+                width: 777px;
             }
 
                 h1{
                     font-size: 30px;
+
+                    @include mobile{
+                        font-size: 40px;
+                    }
                 }
 
                 p{
                     font-size: 15px;
+
+                    @include mobile{
+                        font-size: 20px;
+                    }
                 }
 
                 span{
@@ -157,6 +165,11 @@
 
     }
 
+    @include mobile{
+        width: 960px;
+        height: 1956px;
+    }
+
         &-left{
             display: flex;
             flex-direction: column;
@@ -172,6 +185,10 @@
                 align-items: center;
                 width: 480px;
                 font-size: 20px;
+
+                @include mobile{
+                    font-size: 39px;
+                }
             }
         }
 
@@ -179,6 +196,10 @@
             height:304px; 
             width: 2px;
             background-color: #fff;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         &-right{
@@ -192,6 +213,10 @@
                 @include tablet{
                     text-align: center;
                 }
+
+                @include mobile{
+                    font-size: 55px;
+                }
             }
 
             p{
@@ -199,6 +224,10 @@
 
                 @include tablet{
                     text-align: center;
+                }
+
+                @include mobile{
+                    font-size: 30px;
                 }
             }
 
@@ -208,13 +237,25 @@
                 width: 450px;
                 gap: 1rem;
 
+                @include mobile{
+                 width: 640px;  
+                }
+
                 .btn{
                     @include btnstyle;
                     box-shadow: none;
                     width: 185px;
                     height: 32px;
                     border: none;
+
+                    @include mobile{
+                        height: 80px;
+                        width: 250px;
+                        font-size: 30px;
+                    }
                 }
+
+               
 
                 &-button{
                     background-color: $trasparent-div;
@@ -224,11 +265,16 @@
                     @include flexCenter;
                     height: 80px;
 
+                    @include mobile{
+                        height: 120px;                      
+                    }
+
                         &-left{
                             color: $dark-text-color;
                             background-color: $third-gradient-1;
                             background-color: -moz-linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
                             background: linear-gradient(90deg, $third-gradient-1 0%, $third-gradient-2 100%);
+
 
                                 i{
                                     color: $primary-color;
@@ -249,6 +295,19 @@
                 @include flexCenter;
                 width: 500px;
                 margin-top: 1.5rem;
+
+                img{
+                    @include mobile{
+                        width: 670px;
+                    }
+                }
+
+                @include mobile{
+                    width: 660px;
+                    height: 400px;
+                    position: relative;
+                    top: 10rem;
+                }
             }
         }
 }
