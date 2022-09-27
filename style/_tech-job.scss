@@ -1,13 +1,35 @@
+#tech-job-title{
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    top: 358px;
+
+    @include tablet{
+        font-size: 40px;
+        left: 50px;
+        top: 150px;
+    }
+}
+
 .tech-job-container{
     background-color: $primary-color;
     display: grid;
     grid-template-columns: 10% 70% 20% 10%;
     align-items: center;
 
+    @include tablet{
+        overflow: hidden;
+        width: 850px;
+    }
+
         .left-rombo{
             position: relative;
             right: 23rem;
             z-index: 2;
+
+            @include tablet{
+                right: 28rem;
+            }
         }
 
         &-info{
@@ -25,6 +47,11 @@
             height: 270px;
             z-index: 1;
             backdrop-filter: blur(12px);
+
+            @include tablet{
+                width: 95vw;
+                height: 720px;
+            }
 
                 h1{
                     font-size: 30px;
@@ -46,17 +73,27 @@
                     height: 15em;
 
 
+
                         .info-1{
                             display: grid;
                             grid-template-columns: 50% 50%;
                             align-items: flex-start;
                             gap: 3rem;
+
+                            @include tablet{
+                                grid-template-columns: 1fr;
+                                margin-bottom: 2rem;
+                            }
                         }
 
                         .info-2{
                             display: grid;
                             grid-template-columns: 50% 50%;
                             gap: 3rem;
+
+                            @include tablet{
+                                grid-template-columns: 1fr;
+                            }
                         }
                 }
 
@@ -71,6 +108,10 @@
                     position: relative;
                     top: 10rem;
                     right: 6rem;
+
+                    @include tablet{
+                       visibility: hidden;
+                    }
                 }
         }
 
@@ -87,6 +128,15 @@
     grid-template-columns: 50% 1% 50%;
     gap: 3rem;
     height: 530px;
+
+    @include tablet{
+        overflow: hidden;
+        width: 850px;
+        @include flexCenter;
+        flex-direction: column;
+        height: 800px;
+
+    }
 
         &-left{
             display: flex;
@@ -113,14 +163,24 @@
         }
 
         &-right{
+
+            
             h1{
                 font-size: 35px;
                 color: $third-gradient-1;
                 margin-bottom: 1rem;
+
+                @include tablet{
+                    text-align: center;
+                }
             }
 
             p{
                 margin-bottom: 1rem;
+
+                @include tablet{
+                    text-align: center;
+                }
             }
 
             .sub-container{
