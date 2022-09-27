@@ -68,6 +68,10 @@
         }
     }
 
+    @include mobile{
+        width: 390px;
+    }
+
 
     
 
@@ -87,7 +91,7 @@
             backdrop-filter: blur(8px);
 
             @include mobile{
-                margin-left: 7rem;
+                margin-left: 2rem;
             }  
 
                 .program-info{

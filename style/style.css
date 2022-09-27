@@ -489,6 +489,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 280px) {
+  .route-course-container {
+    width: 390px;
+  }
+}
 .route-course-container .programs-container {
   display: flex;
   align-items: left;
@@ -506,7 +511,7 @@
 }
 @media screen and (max-width: 280px) {
   .route-course-container .programs-container {
-    margin-left: 7rem;
+    margin-left: 2rem;
   }
 }
 .route-course-container .programs-container .program-info {
