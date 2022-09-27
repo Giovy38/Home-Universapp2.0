@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @include tablet{
+        margin-top: 2.5rem;
+    }
+
     &-left{
         display: flex;
         flex-direction: column;
@@ -82,16 +86,47 @@
         height: 469px;
         padding: 8rem;
 
+        @include tablet{
+            width: 465px;
+            height: 532.4px;
+        }
+
         h3{
             font-size: 30px;
             color: $footer-primary;
             width: 550px;
+
+            @include tablet{
+                width: 200px;
+            }
         }
 
         .welogo{
             width: 550px;
             display: flex;
             justify-content: right;
+
+            @include tablet{
+                width: 200px;
+            }
+        }
+
+        .chat-icon-box{
+            position: fixed;
+            font-size: 60px;
+            right: 14px;
+            bottom: 14px;
+            cursor: pointer;
+
+            @include tablet{
+               display: none;
+            }
+
+            .chat-icon{
+                color: $primary-gradient-1;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px black;
+            }
         }
     }
 }

@@ -1107,6 +1107,119 @@
   margin-top: 1.5rem;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    margin-top: 2.5rem;
+  }
+}
+.footer-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #33ffd9;
+  padding: 8rem;
+}
+.footer-container-left h2 {
+  color: #4003ca;
+  margin-bottom: 2rem;
+}
+.footer-container-left a {
+  text-decoration: none;
+  color: #4003ca;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+.footer-container-left p {
+  font-size: 18px;
+  color: #4003ca;
+  margin-top: 0.6rem;
+}
+.footer-container-left p span {
+  font-weight: bold;
+  color: #4003ca;
+}
+.footer-container-left p .universapp-email {
+  font-style: oblique;
+  color: #4003ca;
+}
+.footer-container-left label {
+  color: #4003ca;
+}
+.footer-container-left .policy-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-container-left .policy-links a {
+  margin: 0;
+}
+.footer-container-left .social-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-container-left .social-icon .social-logo-link {
+  width: 20px;
+}
+.footer-container-left .social-icon .social-logo {
+  width: 30px;
+}
+.footer-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #4003ca;
+  height: 469px;
+  padding: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .footer-container-right {
+    width: 465px;
+    height: 532.4px;
+  }
+}
+.footer-container-right h3 {
+  font-size: 30px;
+  color: #33ffd9;
+  width: 550px;
+}
+@media screen and (max-width: 768px) {
+  .footer-container-right h3 {
+    width: 200px;
+  }
+}
+.footer-container-right .welogo {
+  width: 550px;
+  display: flex;
+  justify-content: right;
+}
+@media screen and (max-width: 768px) {
+  .footer-container-right .welogo {
+    width: 200px;
+  }
+}
+.footer-container-right .chat-icon-box {
+  position: fixed;
+  font-size: 60px;
+  right: 14px;
+  bottom: 14px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .footer-container-right .chat-icon-box {
+    display: none;
+  }
+}
+.footer-container-right .chat-icon-box .chat-icon {
+  color: #ff0076;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
 * {
   padding: 0;
   margin: 0;
