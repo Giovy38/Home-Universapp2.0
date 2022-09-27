@@ -1,0 +1,93 @@
+
+// APPARITION BUTTON
+
+.btn{
+    animation: progressive-apparition 10s linear;
+    transition: 2s;
+}
+
+@keyframes progressive-apparition{
+    0%{
+       opacity: 0%;
+    }
+
+    25%{
+       opacity: 25%;
+    }
+
+    50%{
+       opacity: 62%;
+    }
+
+    100%{
+       opacity: 100%;
+    }
+}
+
+// DOUBLE CUBE APPARITION 
+
+.programmer-img{
+    animation: progressive-apparition 10s linear,img-dimension infinite linear;
+    transition: 4s;
+}
+
+@keyframes img-dimension {
+    from{
+        width: 311px;
+        height: 225px;
+    }
+
+    to{
+        width: 622px;
+        height: 450px;
+    }
+}
+
+// SLASH PRICE 
+.slash-price:hover{
+    animation: no-price 10s linear;
+    transition: 5s;
+}
+
+@keyframes no-price {
+    from{
+        text-decoration: none;
+        background: -webkit-linear-gradient($price-gradient-1,$price-gradient-2,$price-gradient-3,$price-gradient-4, $price-gradient-5);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    to{
+        text-decoration: line-through;
+    }
+}
+
+// NEW PRICE 
+.new-price:hover{
+    animation: new-price 10s linear;
+    transition: 5s;
+}
+
+@keyframes new-price {
+    from{
+        text-decoration: none;
+        background: -webkit-linear-gradient($new-price-gradient-1,$new-price-gradient-2,$new-price-gradient-3,$new-price-gradient-4, $new-price-gradient-5);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    to{
+        text-decoration: line-through;
+    }
+}
+
+// ARROW ANIMATION
+
+.btn:hover{
+
+    .bx-right-arrow-alt{
+        position: relative;
+        left: 10px;
+    }
+    
+}

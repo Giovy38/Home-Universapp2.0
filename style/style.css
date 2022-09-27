@@ -1,4 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.btn {
+  -webkit-animation: progressive-apparition 10s linear;
+          animation: progressive-apparition 10s linear;
+  transition: 2s;
+}
+
+@-webkit-keyframes progressive-apparition {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 62%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes progressive-apparition {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 62%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.programmer-img {
+  -webkit-animation: progressive-apparition 10s linear, img-dimension infinite linear;
+          animation: progressive-apparition 10s linear, img-dimension infinite linear;
+  transition: 4s;
+}
+
+@-webkit-keyframes img-dimension {
+  from {
+    width: 311px;
+    height: 225px;
+  }
+  to {
+    width: 622px;
+    height: 450px;
+  }
+}
+
+@keyframes img-dimension {
+  from {
+    width: 311px;
+    height: 225px;
+  }
+  to {
+    width: 622px;
+    height: 450px;
+  }
+}
+.slash-price:hover {
+  -webkit-animation: no-price 10s linear;
+          animation: no-price 10s linear;
+  transition: 5s;
+}
+
+@-webkit-keyframes no-price {
+  from {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#911D00, #791d06, #D12A00, #DE2C00, #B82500);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    text-decoration: line-through;
+  }
+}
+
+@keyframes no-price {
+  from {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#911D00, #791d06, #D12A00, #DE2C00, #B82500);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    text-decoration: line-through;
+  }
+}
+.new-price:hover {
+  -webkit-animation: new-price 10s linear;
+          animation: new-price 10s linear;
+  transition: 5s;
+}
+
+@-webkit-keyframes new-price {
+  from {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#479143, #285226, #66D160, #6CDE66, #5CBD57);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    text-decoration: line-through;
+  }
+}
+
+@keyframes new-price {
+  from {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#479143, #285226, #66D160, #6CDE66, #5CBD57);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    text-decoration: line-through;
+  }
+}
+.btn:hover .bx-right-arrow-alt {
+  position: relative;
+  left: 10px;
+}
+
 .header {
   background-color: black;
   display: flex;
@@ -51,7 +180,7 @@
   font-size: 25px;
 }
 .header .navbar-button .primary-light-btn {
-  background-image: linear-gradient(to right, #ff0076, #ff00f5, #cc00ff, #5900ff);
+  background-image: linear-gradient(to right, #690C91, #3B0752, #9711D1, #A112DE);
   color: #fff;
   border: none;
 }
@@ -63,7 +192,7 @@
 .header .navbar-button .dark-btn {
   background-color: black;
   color: #fff;
-  border: 1px solid #ff0076;
+  border: 1px solid #690C91;
 }
 
 #primary-section .become-programmer {
@@ -94,7 +223,7 @@
   font-size: 4rem;
 }
 #primary-section .become-programmer .programmer-info .color-h1 {
-  background: -webkit-linear-gradient(#4003CA, #33FFD9, #33a3ff, #3358ff);
+  background: -webkit-linear-gradient(#3F9167, #23523A, #5AD194, #53C289);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -149,7 +278,7 @@
   cursor: pointer;
 }
 #primary-section .become-programmer .programmer-info .candidati-button .trasparent .primary-light-btn {
-  background-image: linear-gradient(to right, #ff0076, #ff00f5, #cc00ff, #5900ff);
+  background-image: linear-gradient(to right, #690C91, #3B0752, #9711D1, #A112DE);
   color: #fff;
   border: none;
 }
@@ -165,7 +294,7 @@
   cursor: pointer;
 }
 #primary-section .become-programmer .programmer-info .secondary-light-btn {
-  background-image: linear-gradient(to right, #4003CA, #33FFD9, #33a3ff, #3358ff);
+  background-image: linear-gradient(to right, #3F9167, #23523A, #5AD194, #53C289);
   color: #fff;
   border: none;
   width: 200px;
@@ -451,7 +580,7 @@
   margin-bottom: 3rem;
 }
 .route-container-info ul li span {
-  color: #ff0076;
+  color: #690C91;
 }
 .route-container .route-img {
   position: relative;
@@ -681,9 +810,9 @@
   color: #000;
 }
 .price-container-banner .price-banner #rated-title {
-  background-color: #ff0076;
-  background-color: -moz-linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
-  background: linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
+  background-color: #690C91;
+  background-color: -moz-linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
+  background: linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
 }
 .price-container-banner .price-banner-info {
   position: relative;
@@ -763,9 +892,9 @@
   color: #000;
 }
 .price-container .button-grouped .price-button-container #rated-button {
-  background-color: #ff0076;
-  background-color: -moz-linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
-  background: linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
+  background-color: #690C91;
+  background-color: -moz-linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
+  background: linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
 }
 .price-container .circle-img {
   display: flex;
@@ -1119,9 +1248,9 @@
   color: black;
 }
 .more-info-right .sub-container-button-right {
-  background-color: #ff0076;
-  background-color: -moz-linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
-  background: linear-gradient(90deg, #ff0076 0%, #2a0d5f 100%);
+  background-color: #690C91;
+  background-color: -moz-linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
+  background: linear-gradient(90deg, #690C91 0%, #8D0FC2 100%);
 }
 .more-info-right .double-circle {
   display: flex;
@@ -1244,7 +1373,7 @@
   }
 }
 .footer-container-right .chat-icon-box .chat-icon {
-  color: #ff0076;
+  color: #690C91;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black;
 }

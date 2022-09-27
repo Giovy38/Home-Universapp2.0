@@ -17,6 +17,7 @@
         h1{
             font-size: 50px;
             // COLORAZIONE TESTO ------
+
             // background: -webkit-linear-gradient($primary-title-decoration,
             // $secondary-title-decoration,
             // $third-title-decoration,
@@ -24,7 +25,6 @@
             // $fifth-title-decoration);
             // background-clip: text;
             // -webkit-text-fill-color: transparent;
-            // -------------------------------
 
 
             @include mobile{
